@@ -11,7 +11,7 @@ io.on('connection', socket=>{
     socket.emit('server-message',{message:'Welcome!'}); 
 });
 
-//add get routere
+//add get route
 app.get('/', (req, res)=>{
     res.sendFile(__dirname+'/index.html');
 });
