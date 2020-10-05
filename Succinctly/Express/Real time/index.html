@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <script src="/socket.io/socket.io.js"></script>
+    </head>
+    <body>
+            <div id="msg"></div>
+            <script>
+                var socket=io.connect('http://localhost:3000');
+                socket.emit('client-message',{message:'Hello, i am new client'});
+                socket.on("server-message",(data)=>{
+                    var messageDiv= document.getElementById('msg');
+                    messageDiv.innerHTML=data.message;
+                })
+            </script>
+    </body>
+</html>
