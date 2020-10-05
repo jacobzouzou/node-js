@@ -1,5 +1,5 @@
 const print= require('jacob-frame-print');
-print("Hello npm !");
+print("I'm Jacob ZOUZOU !");
 
 /*
 Expected output:
