@@ -41,7 +41,7 @@ npx: npm package runner
 
 gulp: task runner. Generally in a Node application, there aren’t many tasks 
     to execute and most of them can be done using the scripts section of the package.json file. 
-    Gulp (and Grunt or similar tools) is used in the front-end world, 
+    Gulp (and Grunt or similar tools) is used in the frontend world, 
     where the JavaScript must be combined into a single file and minimized.  
 
 fix gulp issue: npm i -g gulp-cli --force
