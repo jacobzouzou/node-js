@@ -29,7 +29,7 @@ Publish npm package:
 
  page:68/76
 
-npx: npm excecute
+npx: npm execute
 /unit testing package:  jest, mocha, ...
 
 //testing
@@ -51,5 +51,7 @@ gulp command: gulp 'path/gulpfile.js'
 eslint: source code analyzer
 
 //eslint
-npm esling file.js
+npm eslint file.js
 npx eslint --init : configure eslint
+
+//nvm: node version manager
