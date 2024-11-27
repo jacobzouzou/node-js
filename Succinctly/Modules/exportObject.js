@@ -1,6 +1,6 @@
 // file: export_object.js 
 module.exports = {   
-    name: 'emanuele',   
+    name: 'Emmanuele',   
     surname: 'delbono',   
     getFullName: function(){ return `${this.name} ${this.surname}` } 
 }

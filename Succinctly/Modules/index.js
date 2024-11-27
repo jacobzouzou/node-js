@@ -1,8 +1,6 @@
-var greet = require('./greeter')
+var greet = require('./greetings')
 var user = require('./exportObject')
-var execTime = require('./exportObject')
+var execTime = require('./exportDateObject')
  
-greet('Pitchou')
-console.log(user.name)
-console.log(user.getFullName())
-console.log(execTime.executionTime)
+greet(user.getFullName());
+console.log(execTime().executionTime);
