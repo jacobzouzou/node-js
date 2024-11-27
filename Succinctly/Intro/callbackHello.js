@@ -1,6 +1,6 @@
 function concat(a, b, callback){   
     setTimeout(function(){     
-        var r = a + b     
+        var r = a +" "+b     
         callback(r)   
     }, 0) 
 } 
@@ -12,17 +12,19 @@ function upper(a, callback){
     }, 0) 
 } 
  
-function decor(a, callback){   
+function decorate(a, callback){   
     setTimeout(function(){     
-        var r = '*' + a + '*'     
+        var r = '* ' + a + ' *'     
         callback (r)   
     }, 0) 
 } 
+
+// Exectuted code
 concat('hello', 'world', r1 => 
 {   
     upper(r1, r2 => {     
-        decor(r2, result => {      
-             console.log(result)  // *HELLOWORLD*         
+        decorate(r2, result => {      
+             console.log(result)  // * HELLO WORLD *         
         })
     }) 
 }) 

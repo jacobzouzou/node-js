@@ -1,6 +1,6 @@
 //async read
 const fs=require('fs')
-const data="Hello World!"
+const data="Hello Mr Z !"
 fs.writeFile('../readme.txt',data,(err)=>{
     if(err){
         console.log(err.message)

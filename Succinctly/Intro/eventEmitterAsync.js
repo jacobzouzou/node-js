@@ -1,5 +1,6 @@
 const EvEmitter=require('events').EventEmitter;
 const emiter=new EvEmitter();
+
 //on each event setImmmediate is called with callback to execute at end of task
 emiter.on('event',n => {
     setImmediate(()=>console.log(n * 10));

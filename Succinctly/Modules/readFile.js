@@ -1,10 +1,12 @@
-//async read
+// //async read
 // const fs=require('fs')
-// fs.readFile('./intro/data.txt',(err,data)=>{
+// fs.readFile('../assets/data.txt','utf-8',(err,data)=>{
+//     if(err) throw err
+
 //     console.log(data)
 // })
 
 //sync
 const fs=require('fs')
-const data=fs.readFileSync('./intro/data.txt')
+const data=fs.readFileSync('../assets/data.txt','utf-8')
 console.log(data)

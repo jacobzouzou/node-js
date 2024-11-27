@@ -3,13 +3,13 @@ const fs= require('fs')
 server= http.createServer((request, response)=>{
     response.writeHead(200, {'ContentType':'text/html'})
 
-    // fs.readFile('./index.html',(err,file)=>{
-    //     response.end(file);
-    // })
+    fs.readFile('./index.html',(err,file)=>{
+        response.end(file);
+    })
 
-    //readable stream
-    var stream= fs.createReadStream('./index.html')
-    stream.pipe(response)
+    // //readable stream
+    // var stream= fs.createReadStream('./index.html')
+    // stream.pipe(response)
 
 })
 

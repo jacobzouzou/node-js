@@ -1,6 +1,7 @@
 const http=require('http');
+
 const server= http.createServer((request, response)=>{
-    response.writeHead(200, {'ContentType':'text/html'});
+    response.writeHead(200, {'ContentType':'text/html, charset=utf-8'});
     if(request.url==="/about"){
         response.write("<h2>About Node.js</h2>")
     }
